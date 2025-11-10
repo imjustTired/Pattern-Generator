@@ -1,3 +1,9 @@
+//  Class author:  Rodwell Alfred (King of Coding)
+//  Date created:  11/2/25
+//  General description: a class containing a main method that calls other methods to produce each of the patterns listed below
+//
+
+
 public class Pattern {
 
     // Pre: rows tells how many lines of stars to print.
@@ -29,22 +35,19 @@ public class Pattern {
     // Pre: start is the first odd number to use.
     // Post: prints lines of odd numbers going down.
     public static void odds(int start){
-        int n = 1;
-        while (start >= 1){
-            int m = 0;
-            while (m < start){
+        for (int n = 1; start >= 1; start -= 2){
+            for (int m = 0; m < start; m++){
                 System.out.print(start);
-                m++;
             }
-            start -= 2;
             System.out.println("");
         }
-    }
+            }
+
 
     // Pre: maxE is how tall the pattern should be.
     // Post: prints E and O lines that switch each time.
     public static void eo(int maxE){
-        int numero = 0;
+        int numero = 1;
         char letter = 'O';
      
         if (maxE % 2 == 0){
@@ -107,6 +110,6 @@ public class Pattern {
     }
 
     public static void main(String[] args) { 
-        pyramid(6);
+        eo(6);
     }
 }
