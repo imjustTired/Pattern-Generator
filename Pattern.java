@@ -1,7 +1,6 @@
 //  Class author:  Rodwell Alfred (King of Coding)
 //  Date created:  11/2/25
 //  General description: a class containing a main method that calls other methods to produce each of the patterns listed below
-//
 
 
 public class Pattern {
@@ -70,7 +69,7 @@ public class Pattern {
             System.out.println("");
             numero += 1;
         }
-
+        numero -= 2;
         while (numero > 0){
             int num3 = 0;
             while (num3 < numero){
@@ -110,6 +109,6 @@ public class Pattern {
     }
 
     public static void main(String[] args) { 
-        eo(6);
+        eo(5);
     }
 }
